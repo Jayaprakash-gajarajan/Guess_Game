@@ -1,0 +1,49 @@
+*{
+    
+  box-sizing: border-box;
+}
+.add-movie-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 1em;
+  margin: 1rem auto;
+}
+.back{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 10px;
+}
+.read {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.home{
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP.mLdpowbljnJLe2XnOnytaAHaE8&pid=Api&P=0");
+  min-width:100vw;
+  min-height: 100vh; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+ .display{
+  margin-left: 495px;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 30px;
+  border: 2px dotted black;
+  max-width: 250px;
+  max-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
