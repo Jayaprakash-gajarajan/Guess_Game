@@ -16,6 +16,13 @@
  justify-content: center;
  margin: 10px;
 }
+p{
+  
+  text-align: center;
+  margin-left: 33%;
+  font-size: 18px;
+  text-align: justify;
+}
 .read {
   font-size: 20px;
   display: flex;

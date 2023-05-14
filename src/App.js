@@ -23,8 +23,9 @@ function App(){
     <AppBar position="static">
       <Toolbar>
       <Button color="inherit" onClick={() => navigate("/")}>HOME</Button>
+      <Button color="inherit" onClick={() => navigate("/rules")}>INSTRUCTION</Button>
       <Button color="inherit" onClick={() => navigate("/number")}>GAME</Button>
-      <Button color="inherit" onClick={() => navigate("/table")}>TABLE</Button>
+      <Button color="inherit" onClick={() => navigate("/table")}>LEADERBOARD</Button>
 
       {/* <Button color="inherit" onClick={() => navigate("/check")}>CHECK</Button> */}
       </Toolbar>
@@ -34,6 +35,7 @@ function App(){
       <Route  path="/number" element={<Number fourDigit={fourDigit} setFourDigit={setFourDigit} text={text} setText={setText}/>}></Route>
       <Route  path="/check" element={<Check fourDigit={fourDigit} text={text}/>}></Route>
       <Route path='/result' element={<Result/>}></Route>
+      <Route path='/rules' element={<Rules/>}></Route>
       <Route path='/table' element={<LeaderBoard/>}></Route>
 
     </Routes>
@@ -371,6 +373,23 @@ function LeaderBoard(){
      <div className='back'>
       <Button  onClick={()=>navigate("/")}>Back</Button>
  </div>
+    </div>
+  )
+}
+function Rules(){
+  return(
+    <div>
+      <h1>Game Instructions</h1>
+      <p>1.First enter your name and click generate button</p>
+      <p>2.Next click Go to Check butoon then the timer will be started</p>
+      <p>3.Then type the guessing number and check</p>
+      <p>4."+" means the number is correct</p>
+      <p>5."" means the number is with in that four number</p>
+      <p>6."-" means the number is not in that generate number</p>
+      <p>7.when you check "++++" show then guess is correct then only you can stop the timer</p>
+      <p>8.Next click view button and add the data to table </p>
+      <p>9.the time and chance based your rank can be generated</p>
+      <p>10.In Leaderboard you can your rank</p>
     </div>
   )
 }
